@@ -1,0 +1,230 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>145d3f90-d9f0-4f29-962a-92593858eaa7</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Demos\Drone\Drone.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Typhoon</Name>
+    <RootNamespace>Typhoon</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Demos\Ballistics\Ballistics.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Demos\Bridge\Bridge.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Demos\Drone specific l kareem\DroneSpecificLKareem.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Demos\Firework\Firework.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Demos\Drone\Drone.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Demos\Platform\Platform.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Demos\Ragdoll\Ragdoll.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Demos\SailBoat\SailBoat.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Demos\SimpleSpider\SimpleSpider.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\grapficstryhards.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\contacttests.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\quickTests.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\rodstest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\pfgen.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\rotationalmatrices.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\TEST.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Body\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Body\Body.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Contact\Contact.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Contact\FineCollision.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Contact\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Core\Matrix3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Core\Matrix4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Core\Constants.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Core\Quaternion.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Core\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Core\Vector.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon.py" />
+    <Compile Include="Typhoon\Fgen\Drag.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Fgen\Fgen.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Fgen\Buoyancy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Fgen\ForceRegistry.py" />
+    <Compile Include="Typhoon\Fgen\Aero.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Fgen\DroneThrust.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Fgen\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Link\HingeJoint.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Link\Joint.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Link\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Pcontact\ContactGenerator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Pcontact\ParticleContactResolver.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Pcontact\ParticleContact.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Pcontact\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Pfgen\AnchordSpring.py" />
+    <Compile Include="Typhoon\Pfgen\AnchordBungee.py" />
+    <Compile Include="Typhoon\Pfgen\Bungee.py" />
+    <Compile Include="Typhoon\Pfgen\Bouyancy.py" />
+    <Compile Include="Typhoon\Pfgen\Spring.py" />
+    <Compile Include="Typhoon\Pfgen\Pfgen.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Pfgen\ForceRegistery.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Pfgen\Drag.py" />
+    <Compile Include="Typhoon\Pfgen\Gravity.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Pfgen\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Plink\CableConstrain.py" />
+    <Compile Include="Typhoon\Plink\LinkConstrain.py" />
+    <Compile Include="Typhoon\Plink\RodConstrain.py" />
+    <Compile Include="Typhoon\Plink\Rod.py" />
+    <Compile Include="Typhoon\Plink\Cable.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Plink\Link.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Plink\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Pworld\Pworld.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Pworld\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\World\World.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\World\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Typhoon\Particle.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Demos\" />
+    <Folder Include="Demos\Ballistics\" />
+    <Folder Include="Demos\Firework\" />
+    <Folder Include="Demos\Bridge\" />
+    <Folder Include="Demos\Drone\" />
+    <Folder Include="Demos\Drone specific l kareem\" />
+    <Folder Include="Demos\SimpleSpider\" />
+    <Folder Include="Demos\Ragdoll\" />
+    <Folder Include="Demos\SailBoat\" />
+    <Folder Include="Demos\Platform\" />
+    <Folder Include="Tests\" />
+    <Folder Include="Typhoon\" />
+    <Folder Include="Typhoon\Core\" />
+    <Folder Include="Typhoon\Body\" />
+    <Folder Include="Typhoon\Fgen\" />
+    <Folder Include="Typhoon\Contact\" />
+    <Folder Include="Typhoon\Link\" />
+    <Folder Include="Typhoon\World\" />
+    <Folder Include="Typhoon\Pworld\" />
+    <Folder Include="Typhoon\Plink\" />
+    <Folder Include="Typhoon\Pcontact\" />
+    <Folder Include="Typhoon\Pfgen\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
