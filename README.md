@@ -74,6 +74,9 @@ class BallisticsDemo:
                     shot.render()
                     shot.particle.integrate(1/FREQ)
 ```
+<p align="center">
+  <img src="/figures/ballisticAnimation.gif" width="300" height="300" />
+</p>
 
 ### Sailboat
 
@@ -138,3 +141,39 @@ def update(self,duration):
             self.display()
             self.update(1/self.FREQ)
 ```
+<p align="center">
+  <img src="/figures/boatAnimation.gif" width="300" height="300" />
+</p>
+
+### Other demos
+   
+<div align="center">
+    <table>
+        <thead>
+            <tr>
+                <th>Firework</th>
+                <th>Bridge</th
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <img src="/figures/fireworkAnimation.gif" width="300" height="300" /> </td>
+                <td> <img src="/figures/bridgeAnimation.gif" width="300" height="300" /> </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>Drone</th>
+                <th>Ragdoll</th
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <img src="/figures/droneAnimation.gif" width="300" height="300" /> </td>
+                <td> <img src="/figures/ragdollAnimation.gif" width="300" height="300" /> </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
